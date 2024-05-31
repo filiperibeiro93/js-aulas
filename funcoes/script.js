@@ -28,4 +28,33 @@ console.log(corFavorita('azul'));
 
 addEventListener('click', function() {
   console.log('clicou');
-})
+});
+
+function terceiraIdade(idade) {
+  if(typeof idade !== 'number') {
+    return 'Informe a sua idade!';
+  } else if(idade >= 60) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(terceiraIdade(60));
+
+var profissao = 'Designer';
+
+function dados() {
+  var nome = 'André';
+  var idade = 28;
+  function outrosDados() {
+    var endereco = 'Rio de Janeiro';
+    var idade = 29;
+    return `${nome}, ${idade}, ${endereco}, ${profissao}`;
+  }
+  return outrosDados();
+}
+
+dados(); // Retorna 'André, 29, Rio de Janeiro, Designer'
+console.log(dados())
+// outrosDados(); // retorna um erro
