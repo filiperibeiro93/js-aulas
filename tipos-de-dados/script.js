@@ -15,6 +15,7 @@ var idade = 31;
 var nome = 'Filipe';
 var sobrenome = 'Ribeiro';
 var nomeCompleto = nome + ' ' + sobrenome;
+nomeCompleto = `${nome} ${sobrenome}`
 console.log(nomeCompleto);
 // Coloque a seguinte frase em uma variável: It's time
 var teste2 = "It's time";
